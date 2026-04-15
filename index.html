@@ -1,18 +1,22 @@
 <!doctype html>
 <html lang="de">
 <head>
-
-  <script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  data-utmify-prevent-subids
-  async
-  defer
-></script>
-  
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
   <title>Vielen Dank für Ihre Bestellung</title>
+
+  <script>
+    window.pixelId = "69debb544c0a61187444fcdc";
+    var a = document.createElement("script");
+    a.setAttribute("async", "");
+    a.setAttribute("defer", "");
+    a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+    document.head.appendChild(a);
+  </script>
+
+  <script src="https://cdn.utmify.com.br/scripts/utms/latest.js" async defer></script>
+  
   <style>
     /* Reset básico */
     body {
@@ -21,7 +25,6 @@
       width: 100% !important;
       -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
-      /* Fundo geral #F7F9FA */
       background-color: #F7F9FA;
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: #333333;
@@ -33,26 +36,21 @@
       mso-table-rspace: 0pt;
     }
     
-    /* Configuração do Wrapper */
     .wrapper {
       width: 100%;
       table-layout: fixed;
-      /* Fundo wrapper #F7F9FA */
       background-color: #F7F9FA;
       padding-top: 40px;
       padding-bottom: 40px;
     }
     
-    /* Configuração do Box Principal */
     .main {
-      /* Fundo do cartão #F7F9FA */
       background-color: #F7F9FA;
       margin: 0 auto;
       width: 100%;
       max-width: 600px;
       border-radius: 8px;
       overflow: hidden;
-      /* Sem sombra */
     }
     
     .hero {
@@ -84,13 +82,11 @@
       text-align: center;
     }
     
-    /* Destaque em negrito */
     strong {
       color: #000;
       font-weight: 700;
     }
 
-    /* --- RESPONSIVIDADE --- */
     @media screen and (max-width: 600px) {
       .wrapper { padding-top: 20px; padding-bottom: 20px; }
       .main { width: 94% !important; max-width: 94% !important; }
@@ -117,26 +113,19 @@
             
             <p style="margin-top: 20px;">
               Klicken Sie auf den Button unten, um jetzt auf Ihr Produkt zuzugreifen:
+            </p>
 
-          
-<!-- HOTMART - Sales Funnel Widget -->
-<!--- sales funnel container --->
-<div id="hotmart-sales-funnel"></div>
+            <div id="hotmart-sales-funnel"></div>
 
-<!--- script load and setup --->
-<script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
-<script>
-checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
-</script>
-<!-- HOTMART - Sales Funnel Widget -->
-
-
-
+            <script src="https://checkout.hotmart.com/lib/hotmart-checkout-elements.js"></script>
             <script>
-  window.pixelId = "69debb544c0a61187444fcdc";
-  var a = document.createElement("script");
-  a.setAttribute("async", "");
-  a.setAttribute("defer", "");
-  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
-  document.head.appendChild(a);
-</script>
+              checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel')
+            </script>
+            </td>
+        </tr>
+      </table>
+    </center>
+  </div>
+
+</body>
+</html>
